@@ -1,0 +1,12 @@
+.icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #5C5C5C;
+  color: white;
+  border-radius: 50px;
+  font-size: 50px;
+}
