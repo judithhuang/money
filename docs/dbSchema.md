@@ -2,7 +2,18 @@
 
 - 所有实体都将包含 `isDeleted`, `deletedAt` 和 `createdAt` 字段，故下面将不再一一列出
 
-# user 用户
+# token
+
+```js
+{
+  _id: ObjectId,
+  value: string,
+  userId: ObjectId,
+  openId: string
+}
+```
+
+# wechatUser 用户
 
 ```js
 {
@@ -21,6 +32,7 @@
 ```js
 {
   _id: ObjectId,
+  userId: ObjectId,
   type: Enum,
   category: Enum,
   // 自定义的类别
@@ -34,6 +46,7 @@
 ```js
 {
   _id: ObjectId,
+  userId: ObjectId,
   name: string,
   icon: string
 }
